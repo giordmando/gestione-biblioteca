@@ -1,10 +1,7 @@
 # Interfacce
-from abc import abstractmethod
+from abc import ABC, abstractmethod
 
-from src.models.Interfaces.IItemPrestabile import IItemPrestabile
-
-
-class IElement(IItemPrestabile):
+class IElement(ABC):
     @abstractmethod
     def get_id(self):
         pass

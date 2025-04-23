@@ -20,5 +20,9 @@ class IPrestitoService(ABC):
         pass
 
     @abstractmethod
+    def tutti_prestiti_utente(self, user_id:int):
+        pass
+
+    @abstractmethod
     def tutti_prestiti(self):
         pass

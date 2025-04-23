@@ -2,8 +2,8 @@ from src.models.Interfaces.IUser import IUser
 
 
 class User(IUser):
-    def __init__(self, username: str, nome: str):
-        self.id = hasattr(self, 'id') + 1 if hasattr(self, 'id') else 1
+    def __init__(self, id:int, username: str, nome: str):
+        self.id = id
         self.name = nome
         self.username = username
 

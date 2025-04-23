@@ -1,8 +1,9 @@
+from src.models.Interfaces import IElementPrestabile
 from src.models.Interfaces.IPrestito import IPrestito
-from src.models.Interfaces import IElement, IUser
+from src.models.Interfaces import IUser
 
 class Prestito(IPrestito):
-    def __init__(self, data_inizio: str, data_fine: str, elemento: IElement, utente: IUser):
+    def __init__(self, data_inizio: str, data_fine: str, elemento: IElementPrestabile, utente: IUser):
         self.data_inizio = data_inizio
         self.data_fine = data_fine
         self.element = elemento

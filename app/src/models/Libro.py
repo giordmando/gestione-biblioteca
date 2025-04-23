@@ -1,6 +1,6 @@
-from src.models.Interfaces.IElement import IElement
+from src.models.Interfaces.IElementPrestabile import IElementPrestabile
 
-class Libro(IElement):
+class Libro(IElementPrestabile):
     def __init__(self, titolo, autore, anno, genere):
         self.id = hash(titolo + autore + str(anno) + genere)
         self.titolo = titolo

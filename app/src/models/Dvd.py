@@ -1,7 +1,7 @@
 
-from src.models.Interfaces.IElement import IElement
+from src.models.Interfaces.IElementPrestabile import IElementPrestabile
 
-class DVD(IElement):
+class DVD(IElementPrestabile):
     
     def __init__(self, title: str, director: str, year: int, duration: int):
         self.id = hash(title + director + str(year) + str(duration))
